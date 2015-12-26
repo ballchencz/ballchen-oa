@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+body{background-color: #1c77ac; background-image: url(./images/light1.png); background-repeat: no-repeat; background-position: center top; overflow: hidden;}
+.contentUl{width:980px;list-style: none;margin: 100px auto;}
+.contentUl li{float:left;margin-left:20px;margin-right:20px;}
+.contentUl li a{font-size:16px;color:#fff;display:block;width:196px; height:252px; background:url(./images/lbg.png) no-repeat;text-align:center; padding-top:25px; cursor:pointer;}
+.contentUl li a:hover{background:url(./images/lbg1.png) no-repeat;font-size:16px; color:#fff; padding-top:10px;}

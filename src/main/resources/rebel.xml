@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+	<classpath>
+		<dir name="D:/workspace-sts-3.7.2.RELEASE/ballchen-oa/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir name="D:/workspace-sts-3.7.2.RELEASE/ballchen-oa/src/main/webapp">
+			</dir>
+		</link>
+	</web>
+
+</application>
