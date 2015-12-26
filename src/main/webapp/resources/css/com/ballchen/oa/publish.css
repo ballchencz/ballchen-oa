@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 *{font-size:9pt;border:0;margin:0;padding:0;}
 body{font-family:'微软雅黑'; margin:0 auto;min-width:980px;}
-a,a:focus{text-decoration:none;color:#000;outline:none;blr:expression(this.onFocus=this.blur());}
+a,a:focus{text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
 .main{width:100%;margin:50px auto;position: fixed;}
 .systemlogo{display:block; background: url("./images/loginlogo.png");width:280px;height:71px;margin:50px auto;}
 .top{width:100%;position: fixed;height: 50px; background: url("./images/loginbg1.png") repeat-x;}

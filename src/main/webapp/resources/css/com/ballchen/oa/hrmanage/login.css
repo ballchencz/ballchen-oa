@@ -5,11 +5,12 @@ body{background-color:#1c77ac; background-image:url(./images/light.png); backgro
 .loginbox{width:100%;heigth:339px;background:url(./images/logininfo.png) no-repeat; margin:auto;left:0; right:0; bottom:0; top:180px; position: fixed;}
 .loginbox ul{margin-top:88px; margin-left:285px;}
 .loginbox ul li{margin-bottom:25px; list-style:none;}
-.loginbox ul li label{color:#687f92; padding-left:25px;}
+.loginbox ul li label{color:#687f92; padding:8px 0px 0px 25px; float:left;}
 .loginbox ul li label a{color:#687f92;}
 .loginbox ul li label a:hover{color:#3d96c9;}
 .loginbox ul li label input{margin-right:5px;vertical-align:middle; margin-bottom:2px; *margin-bottom:2px;}
 .loginuser{width:299px; height:48px; background:url(./images/loginuser.png) no-repeat; border:none; line-height:48px; padding-left:44px; font-size:14px; font-weight:bold;}
 .loginpwd{width:299px; height:48px; background:url(./images/loginpassword.png) no-repeat; border:none;line-height:48px; padding-left:44px; font-size:14px; color:#90a2bc;}
-.loginbtn{width:111px;height:35px; background:url(./images/buttonbg.png) repeat-x; font-size:14px; font-weight:bold;color:#fff;cursor:pointer; line-height:35px;}
+.loginbtn{float:left;display:block;width:111px;height:35px; background:url(./images/buttonbg.png) repeat-x; font-size:14px; font-weight:bold;color:#fff;cursor:pointer; line-height:35px;text-align:center;}
+.loginbtn:hover{font-size: 16px;width: 137px;height:35px;background:url(./images/btnbg.png) repeat-x;}
 .loginbox,.loginbox1,.loginbox2,.loginbox3,.loginbox4{width:692px; height:373px;margin-top:30px;}

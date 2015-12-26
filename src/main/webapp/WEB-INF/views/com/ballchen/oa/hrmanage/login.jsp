@@ -31,7 +31,7 @@
 			<ul>
 				<li><input name="" type="text" class="loginuser" onclick="JavaScript:this.value=''" /></li>
 				<li><input name="" type="password" class="loginpwd" onclick="" /></li>
-				<li><input  type="button" class="loginbtn" value="登录" onclick="" />
+				<li><a class="loginbtn" onclick="" href="javascript:void(0)">登陆</a>
 					<label>
 						<input name="" type="checkbox" value="" checked="checked" />记住密码
 					</label>
