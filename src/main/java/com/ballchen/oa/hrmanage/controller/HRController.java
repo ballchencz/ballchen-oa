@@ -18,6 +18,7 @@ public class HRController {
 	@RequestMapping(value="/toLoginPage",method={RequestMethod.GET})
 	public String toLoginPage(){
 		UserBasic userBasic = new UserBasic();
+		//userBasic.setId(UUID.randomUUID().toString());
 		userBasic.setUserName("ChenZhao");
 		userBasic.setAddDate(new Date());
 		userBasic.setUserSex(0);
