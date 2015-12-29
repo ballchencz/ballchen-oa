@@ -9,3 +9,5 @@ target/
 .classpath
 .project
 Servers/
+/com.ballchen.oa.log
+/com.clearnight.oa.log
