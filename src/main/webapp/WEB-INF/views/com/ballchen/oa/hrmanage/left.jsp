@@ -45,48 +45,50 @@
             </ul>
         </li> -->
         
-        <li class="active"><cite></cite><a href="" target="rightFrame">基本信息</a><i></i></li>
-        <li><cite></cite><a href="imgtable.html" target="rightFrame">教育信息</a><i></i></li>
-        <li><cite></cite><a href="form.html" target="rightFrame">工作经历信息</a><i></i></li>
-        <li><cite></cite><a href="imglist.html" target="rightFrame">图片列表</a><i></i></li>
-        <li><cite></cite><a href="imglist1.html" target="rightFrame">自定义</a><i></i></li>
+        <li class="active"><cite></cite><a href="javascript:void(0)" target="rightFrame">基本信息</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">教育信息</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">工作经历</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">奖惩记录</a><i></i></li>
+<!--         <li><cite></cite><a href="imglist1.html" target="rightFrame"></a><i></i></li>
         <li><cite></cite><a href="tools.html" target="rightFrame">常用工具</a><i></i></li>
         <li><cite></cite><a href="filelist.html" target="rightFrame">信息管理</a><i></i></li>
         <li><cite></cite><a href="tab.html" target="rightFrame">Tab页</a><i></i></li>
-        <li><cite></cite><a href="error.html" target="rightFrame">404页面</a><i></i></li>
+        <li><cite></cite><a href="error.html" target="rightFrame">404页面</a><i></i></li> -->
         </ul>    
-    </dd>
-        
-    
+    </dd>    
+    <dd><div class="title"><span><img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/leftico03.png" /></span>人事调动</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="javascript:void(0)">入职管理</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">转正管理</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">解聘管理</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">退休管理</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">职位调动</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">部门调动</a><i></i></li>
+    </ul>    
+    </dd>  
     <dd>
     <div class="title">
-    <span><img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/leftico02.png" /></span>其他设置
+    <span><img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/leftico02.png" /></span>信息统计
     </div>
     <ul class="menuson">
-        <li><cite></cite><a href="flow.html" target="rightFrame">流程图</a><i></i></li>
-        <li><cite></cite><a href="project.html" target="rightFrame">项目申报</a><i></i></li>
-        <li><cite></cite><a href="search.html" target="rightFrame">档案列表显示</a><i></i></li>
-        <li><cite></cite><a href="tech.html" target="rightFrame">技术支持</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">基本信息统计</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">学历信息统计</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">工作经历统计</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">奖惩信息统计</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)" target="rightFrame">人事调动统计</a><i></i></li>
         </ul>     
     </dd> 
     
     
-    <dd><div class="title"><span><img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/leftico03.png" /></span>编辑器</div>
-    <ul class="menuson">
-        <li><cite></cite><a href="#">自定义</a><i></i></li>
-        <li><cite></cite><a href="#">常用资料</a><i></i></li>
-        <li><cite></cite><a href="#">信息列表</a><i></i></li>
-        <li><cite></cite><a href="#">其他</a><i></i></li>
-    </ul>    
-    </dd>  
+
     
     
     <dd><div class="title"><span><img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/leftico04.png" /></span>日期管理</div>
     <ul class="menuson">
-        <li><cite></cite><a href="#">自定义</a><i></i></li>
-        <li><cite></cite><a href="#">常用资料</a><i></i></li>
-        <li><cite></cite><a href="#">信息列表</a><i></i></li>
-        <li><cite></cite><a href="#">其他</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">自定义</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">常用资料</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">信息列表</a><i></i></li>
+        <li><cite></cite><a href="javascript:void(0)">其他</a><i></i></li>
     </ul>
     
     </dd>   

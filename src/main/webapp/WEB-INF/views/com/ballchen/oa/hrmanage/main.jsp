@@ -12,7 +12,7 @@
 	<div data-options="region:'north',border:false" style="height:88px;">
 		<iframe scrolling="no" frameborder="0" width="100%" height="100%" src="<%=request.getContextPath()%>/hrManage/toHrmanageMainPageTop"></iframe>
 	</div>
-	<div data-options="region:'west',split:false,title:'人事档案'" style="width:187px;">
+	<div data-options="region:'west',split:false,title:'人事信息'" style="width:187px;">
 		<iframe scrolling="no" frameborder="0" width="100%" height="100%" src="<%=request.getContextPath()%>/hrManage/toHrmanageMainPageLeft"></iframe>
 	</div>
 	<div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>

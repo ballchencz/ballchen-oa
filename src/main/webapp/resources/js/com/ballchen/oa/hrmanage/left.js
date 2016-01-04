@@ -21,6 +21,11 @@ $(function(){
         $(".sub-menus li.active").removeClass("active")
 		$(this).addClass("active");
     });
+	//二级菜单点击
+	$('.menuson > li > a').click(function(e){
+		var a = $('.menuson > li > a').parents('li').removeClass('active');//a标签数组；
+		$(this).parents('li').addClass('active');
+	});
 	
 	$('.title').click(function(){
 		var $ul = $(this).next('ul');

@@ -17,20 +17,29 @@
 
  	<ul class="nav">
 		<li><a href="javascript:void(0)" target="rightFrame" class="selected"><img
-				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/icon01.png" title="人事档案" />
-			<h2>人事档案</h2></a></li>
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/personnel_information.png" title="人事信息" />
+			<h2>人事信息</h2></a></li>
 		<li><a href="javascript:void(0)" target="rightFrame"><img
-				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/icon02.png" title="人力招聘" />
-			<h2>人力招聘</h2></a></li>
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/recruitment_ management.png" title="招聘管理" />
+			<h2>招聘管理</h2></a></li>
 		<li><a href="javascript:void(0)" target="rightFrame"><img
-				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/icon03.png" title="人事调动" />
-			<h2>人事调动</h2></a></li>
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/contract_of_ labour.png" title="劳动合同" />
+			<h2>劳动合同</h2></a></li>
 		<li><a href="javascript:void(0)" target="rightFrame"><img
-				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/icon04.png" title="薪资管理" />
-			<h2>薪资管理</h2></a></li>
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/education_and_training.png" title="培训管理" />
+			<h2>培训管理</h2></a></li>
 		<li><a href="javascript:void(0)" target="rightFrame"><img
-				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/icon05.png" title="文件管理" />
-			<h2>人力开发</h2></a></li>
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/attendance_management.png" title="考勤管理" />
+			<h2>考勤管理</h2></a></li>
+		<li><a href="javascript:void(0)" target="rightFrame"><img
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/performance_management.png" title="绩效管理" />
+			<h2>绩效管理</h2></a></li>
+		<li><a href="javascript:void(0)" target="rightFrame"><img
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/welfare_management.png" title="福利管理" />
+			<h2>福利管理</h2></a></li>
+		<li><a href="javascript:void(0)" target="rightFrame"><img
+				src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/images/salary_management.png" title="工资管理" />
+			<h2>工资管理</h2></a></li>
 	</ul>
 
 	<div class="topright">
