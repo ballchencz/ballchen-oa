@@ -4,12 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link
-	href="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/publish.css"
-	rel="stylesheet" type="text/css" />
-<link
-	href="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/login.css"
-	rel="stylesheet" type="text/css" />
+<link href="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/publish.css" rel="stylesheet" type="text/css" />
+<link href="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/hrmanage/login.css" rel="stylesheet" type="text/css" />
 <title>人力资源管理</title>
 </head>
 <body>
@@ -46,6 +42,11 @@
 		版权所有2015，仅供学习交流，请勿用于任何商业用途
 	</div>
 </body>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/cloud.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/layer/layer.js"></script>
+<script type="text/javascript">
+	var contextPath = "<%=request.getContextPath()%>";
+</script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/hrmanage/login.js"></script>
 </html>
