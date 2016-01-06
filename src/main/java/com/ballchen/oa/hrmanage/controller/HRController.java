@@ -64,4 +64,9 @@ public class HRController {
 	public String toHrmanageLeftPage(){
 		return "/hrmanage/left";
 	}
+	
+	@RequestMapping(value="/toMainCenterPage",method={RequestMethod.GET})
+	public String toMainCenterPage(){
+		return "/hrmanage/center";
+	}
 }

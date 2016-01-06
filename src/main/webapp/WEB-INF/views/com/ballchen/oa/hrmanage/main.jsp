@@ -8,7 +8,7 @@
 <link href="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/themes/default/easyui.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/themes/icon.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="easyui-layout">
+<body class="easyui-layout" id="mainBody">
 	<div data-options="region:'north',border:false" style="height:88px;">
 		<iframe scrolling="no" frameborder="0" width="100%" height="100%" src="<%=request.getContextPath()%>/hrManage/toHrmanageMainPageTop"></iframe>
 	</div>
@@ -17,7 +17,9 @@
 	</div>
 	<div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>
 	<div data-options="region:'south',border:false" style="height:31px;background:#A9FACD;padding:10px;">south region</div>
-	<div data-options="region:'center',title:'Center'"></div>
+	<div data-options="region:'center',title:'Center'">
+		<iframe id="mainCenterIframe" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>
+	</div>
 </body>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.easyui.min.js"></script>

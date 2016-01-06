@@ -94,6 +94,9 @@
     </dd>   
     </dl>
 </body>
+<script type="text/javascript">
+	var contextPath = '<%=request.getContextPath()%>';
+</script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/hrmanage/left.js"></script>
 </html>

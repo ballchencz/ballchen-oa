@@ -24,6 +24,12 @@ $(function(){
 	//二级菜单点击
 	$('.menuson > li > a').click(function(e){
 		var a = $('.menuson > li > a').parents('li').removeClass('active');//a标签数组；
+		//遍历a标签，显示控制显
+		var text = $(this).text();
+		var mainJqueryObject = parent.$;
+		var mainCenter = parent.$('#mainBody').layout('panel','center');
+		mainCenter.panel('setTitle',text);
+		mainJqueryObject('#mainCenterIframe').attr('src',contextPath+'/hrManage/toMainCenterPage');
 		$(this).parents('li').addClass('active');
 	});
 	
