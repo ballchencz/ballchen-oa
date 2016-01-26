@@ -65,7 +65,7 @@ public class UserBasic extends BaseModel{
 	@Column(name = "NATIVE_PLACE", length = 200)
 	private String nativePlace;
 	/**
-	 * 政治面貌 1。群众；2.团员；3.党员；4.其它
+	 * 政治面貌 0。群众；1.团员；2.党员；3.其它
 	 */
 	@Column(name = "POLITICAL_STATUS", precision = 2, scale = 0)
 	private Integer politicalStatus;
@@ -79,7 +79,11 @@ public class UserBasic extends BaseModel{
 	 */
 	@Column(name = "EMAIL", length = 200)
 	private String email;
-	
+	/**
+	 * 备注
+	 */
+	@Column(name = "EMAIL", length = 500)
+	private String mark;
 	
 	/*----------------------setter/getter方法-------------------------------*/
 	public String getUserName() {
@@ -141,6 +145,12 @@ public class UserBasic extends BaseModel{
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getMark() {
+		return mark;
+	}
+	public void setMark(String mark) {
+		this.mark = mark;
 	}
 	
 	

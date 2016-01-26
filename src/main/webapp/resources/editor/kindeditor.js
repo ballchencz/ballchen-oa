@@ -213,7 +213,8 @@ KE.event = {
 
 KE.each = function(obj, func) {
     for (var key in obj) {
-        if (obj.hasOwnProperty(key)) func(key, obj[key]);
+        if (obj.hasOwnProperty(key)) 
+        	func(key, obj[key]);
     }
 };
 

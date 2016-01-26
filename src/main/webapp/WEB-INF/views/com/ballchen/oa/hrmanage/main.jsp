@@ -17,10 +17,19 @@
 	</div>
 	<div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>
 	<div data-options="region:'south',border:false" style="height:31px;background:#A9FACD;padding:10px;">south region</div>
-	<div data-options="region:'center',title:'Center'">
-		<iframe id="mainCenterIframe" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>
+	<div data-options="region:'center',title:'基本信息',cache:false,tools:[{
+					iconCls:'icon-reload',
+					handler:function(){
+						$('#mainCenterIframe').attr('src', $('#mainCenterIframe').attr('src'));
+					}
+				}]">
+		<iframe id="mainCenterIframe" src="<%=request.getContextPath()%>/hrManage/toBaseInfoPage" scrolling="auto" frameborder="0" width="100%" height="100%"></iframe>
 	</div>
 </body>
+<script type="text/javascript">
+	var contextPath = "<%=request.getContextPath()%>";
+</script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/layer/layer.js"></script>
 </html>

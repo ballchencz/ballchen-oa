@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
+import com.ballchen.oa.base.consts.BaseConsts;
 import com.ballchen.oa.hrmanage.service.IHrmanageService;
 
 @Controller
@@ -66,7 +68,29 @@ public class HRController {
 	}
 	
 	@RequestMapping(value="/toMainCenterPage",method={RequestMethod.GET})
-	public String toMainCenterPage(){
+	public String toMainCenterPage(String title){
 		return "/hrmanage/center";
 	}
+	
+	/**
+	 * 转向基本信息页面
+	 * @return String
+	 */
+	@RequestMapping(value="/toBaseInfoPage",method={RequestMethod.GET})
+	public String toBaseInfoPage(){
+		return "/hrmanage/personnelInformation/personnelInfoManage/baseInfo";
+	}
+	
+	/**
+	 * 转向添加或修改页面
+	 * @return
+	 */
+	@RequestMapping(value="/toAddAndEditPage",method={RequestMethod.GET})
+	public ModelAndView toAddAndEditPage(){
+		ModelAndView mv = new ModelAndView("/hrmanage/personnelInformation/personnelInfoManage/addAndEdit");
+		mv.addObject("nationJSONStr", BaseConsts.getAllNationData());
+		return mv;
+	}
+	
+	
 }

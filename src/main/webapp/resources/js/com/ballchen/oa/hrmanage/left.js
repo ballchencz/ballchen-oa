@@ -26,10 +26,11 @@ $(function(){
 		var a = $('.menuson > li > a').parents('li').removeClass('active');//a标签数组；
 		//遍历a标签，显示控制显
 		var text = $(this).text();
+		var url = $(this).attr('url');
 		var mainJqueryObject = parent.$;
 		var mainCenter = parent.$('#mainBody').layout('panel','center');
 		mainCenter.panel('setTitle',text);
-		mainJqueryObject('#mainCenterIframe').attr('src',contextPath+'/hrManage/toMainCenterPage');
+		mainJqueryObject('#mainCenterIframe').attr('src',contextPath+url);
 		$(this).parents('li').addClass('active');
 	});
 	
