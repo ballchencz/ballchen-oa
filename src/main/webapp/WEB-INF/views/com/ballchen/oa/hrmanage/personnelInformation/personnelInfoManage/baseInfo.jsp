@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -58,53 +59,33 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td><input type="checkbox" /></td>
-					<td class="imgtd"><img
-						src="<%=request.getContextPath()%>/resources/images/img11.png" /></td>
-					<td><a href="#">非常不错的国外后台模板，支持HTML5</a>
-					<p>发布时间：2013-10-12 09:25:18</p></td>
-					<td>后台界面
-						<p>ID: 82122</p>
-					</td>
-					<td>开放浏览</td>
-					<td>admin</td>
-					<td>已审核</td>
-					<td>128</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" /></td>
-					<td class="imgtd"><img
-						src="<%=request.getContextPath()%>/resources/images/img11.png" /></td>
-					<td><a href="#">非常不错的国外后台模板，支持HTML5</a>
-					<p>发布时间：2013-10-12 09:25:18</p></td>
-					<td>后台界面
-						<p>ID: 82122</p>
-					</td>
-					<td>开放浏览</td>
-					<td>admin</td>
-					<td>已审核</td>
-					<td>128</td>
-				</tr>
+				<c:forEach items="${userBasics}" var="userBasic">
+					<tr>
+						<td><input type="checkbox" value="${userBasic.id}"/></td>
+						<td class="imgtd"><img src="<%=request.getContextPath()%>/resources/images/img11.png" /></td>
+						<td><a href="#">${userBasic.userName}</a></td>
+						<td>
+							<c:choose>
+								<c:when test="${userBasic.userSex==0}">
+									女
+								</c:when>
+								<c:when test="${userBasic.userSex==1}">
+									男
+								</c:when>
+							</c:choose>
+						</td>
+						<td>${userBasic.birthday}</td>
+						<td><c:out value="${nations[userBasic.nation]}"></c:out></td>
+						<td>${userBasic.phone}</td>
+						<td>${userBasic.email}</td>
+					</tr>
+				</c:forEach>
 			</tbody>
 		</table>
 		<div class="pagin">
 			<div class="message">
 				共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页
 			</div>
-			<ul class="paginList">
-				<li class="paginItem"><a href="javascript:;"><span
-						class="pagepre"></span></a></li>
-				<li class="paginItem"><a href="javascript:;">1</a></li>
-				<li class="paginItem current"><a href="javascript:;">2</a></li>
-				<li class="paginItem"><a href="javascript:;">3</a></li>
-				<li class="paginItem"><a href="javascript:;">4</a></li>
-				<li class="paginItem"><a href="javascript:;">5</a></li>
-				<li class="paginItem more"><a href="javascript:;">...</a></li>
-				<li class="paginItem"><a href="javascript:;">10</a></li>
-				<li class="paginItem"><a href="javascript:;"><span
-						class="pagenxt"></span></a></li>
-			</ul>
 		</div>
 </body>
 <script type="text/javascript"
@@ -113,6 +94,8 @@
 	src="<%=request.getContextPath()%>/resources/js/select-ui.min.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/laypage/laypage.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/hrmanage/personnelInformation/personnelInfoManage/baseInfo.js"></script>
 </html>

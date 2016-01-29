@@ -8,6 +8,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.ballchen.oa.base.model.BaseModel;
@@ -82,7 +83,7 @@ public class UserBasic extends BaseModel{
 	/**
 	 * 备注
 	 */
-	@Column(name = "EMAIL", length = 500)
+	@Column(name = "MARK", length = 500)
 	private String mark;
 	
 	/*----------------------setter/getter方法-------------------------------*/
@@ -90,7 +91,9 @@ public class UserBasic extends BaseModel{
 		return userName;
 	}
 	public void setUserName(String userName) {
-		this.userName = userName;
+		if(userName!=null&&!userName.equals("")){			
+			this.userName = userName;
+		}
 	}
 	public Integer getUserSex() {
 		return userSex;
@@ -102,7 +105,9 @@ public class UserBasic extends BaseModel{
 		return idNum;
 	}
 	public void setIdNum(String idNum) {
-		this.idNum = idNum;
+		if(idNum!=null && !idNum.equals("")){			
+			this.idNum = idNum;
+		}
 	}
 	public Date getBirthday() {
 		return birthday;
@@ -126,7 +131,9 @@ public class UserBasic extends BaseModel{
 		return nativePlace;
 	}
 	public void setNativePlace(String nativePlace) {
-		this.nativePlace = nativePlace;
+		if(nativePlace!=null && !nativePlace.equals("")){	
+			this.nativePlace = nativePlace;
+		}
 	}
 	public Integer getPoliticalStatus() {
 		return politicalStatus;
@@ -138,19 +145,25 @@ public class UserBasic extends BaseModel{
 		return phone;
 	}
 	public void setPhone(String phone) {
-		this.phone = phone;
+		if(phone!=null && !phone.equals("")){
+			this.phone = phone;
+		}
 	}
 	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
-		this.email = email;
+		if(email!=null && !email.equals("")){
+			this.email = email;
+		}
 	}
 	public String getMark() {
 		return mark;
 	}
 	public void setMark(String mark) {
-		this.mark = mark;
+		if(mark!=null && !mark.equals("")){
+			this.mark = mark;
+		}
 	}
 	
 	

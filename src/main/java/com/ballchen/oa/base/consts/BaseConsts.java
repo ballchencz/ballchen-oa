@@ -16,6 +16,31 @@ public class BaseConsts {
 	                                            "毛南族", "撒拉族","布朗族", "塔吉克族","阿昌族","普米族","鄂温克族",  
 	                                            "怒族" ,"京族","基诺族","德昂族","保安族","俄罗斯族","裕固族",  
 	                                            "乌兹别克族","门巴族", "鄂伦春族", "独龙族", "塔塔尔族", "赫哲族","珞巴族"};
+	public static final Map<String,String> HANDLER_FLAG_INFO_MAP = new HashMap<String,String>();
+	static{
+		HANDLER_FLAG_INFO_MAP.put("INSERTTRUE", "添加成功");
+		HANDLER_FLAG_INFO_MAP.put("INSERTFALSE", "添加失败");
+		HANDLER_FLAG_INFO_MAP.put("UPDATETRUE", "修改成功");
+		HANDLER_FLAG_INFO_MAP.put("UPDATEFALSE", "修改失败");
+		HANDLER_FLAG_INFO_MAP.put("REMOVETRUE", "删除成功");
+		HANDLER_FLAG_INFO_MAP.put("REMOVEFALSE", "删除失败");
+	}
+	
+	/**
+	 * 年月日时间格式
+	 */
+	public final static String dateStringFormat = "yyyy-MM-dd";
+	
+	/**
+	 * 年月日时分秒时间格式
+	 */
+	public final static String dateTimeStringFormat = "yyyy-MM-dd HH:mm:ss";
+	
+	/**
+	 * Date对象toString时间格式
+	 */
+	public static final String SIMPLEDATEFORMAT_FORMAT_STRING_TWO = "EEE MMM dd HH:mm:ss zzz yyyy";
+	
 	/**
 	 * 获得民族Map集合
 	 * @return Map<Integer,String>

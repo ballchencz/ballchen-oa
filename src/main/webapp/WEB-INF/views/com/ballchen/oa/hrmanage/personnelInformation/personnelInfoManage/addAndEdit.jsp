@@ -18,25 +18,25 @@
 		<div class="formtitle">
 			<span>基本信息</span>
 		</div>
-
+		<form class="easyui-form"  method="post">
 		<ul class="forminfo">
-			<li><label>姓名<b>*</b></label><input name="" type="text"
+			<li><label>姓名<b>*</b></label><input name="userName" type="text"
 				class="dfinput" /><i>标题不能超过30个字符</i></li>
 			<li><label>性别</label><div class="vocation">
-					<select class="select1">
-						<option>女</option>
-						<option>男</option>
+					<select class="select1" name="userSex">
+						<option value="0">女</option>
+						<option value="1">男</option>
 					</select>
 				</div></li>
 			<li><label>民族</label><div class="vocation">
-					<select class="select1">
+					<select class="select1" name="nation">
 						<c:forEach items="${nationJSONStr}" var="item">
 							<option value='<c:out value="${item.key}"/>'><c:out value="${item.value}"/></option>
 						</c:forEach>
 					</select>
 				</div></li>
 			<li><label>婚姻状况</label><div class="vocation">
-					<select class="select1">
+					<select class="select1" name="maritalStatus">
 						<option value="0">未婚</option>
 						<option value="1">已婚</option>
 						<option value="2">离异</option>
@@ -44,30 +44,30 @@
 					</select>
 				</div></li>
 			<li><label>政治面貌</label><div class="vocation">
-					<select class="select1">
+					<select class="select1" name="politicalStatus">
 						<option value="0">群众</option>
 						<option value="1">团员</option>
 						<option value="2">党员</option>
 						<option value="3">其他</option>
 					</select>
 				</div></li>
-			<li><label>出生日期<b>*</b></label><input name="" type="text" class="dfinput" onclick="WdatePicker()"/></li>
-			<li><label>身份证号码<b>*</b></label><input name="" type="text" class="dfinput"/></li>
-			<li><label>个人电话</label><input name="" type="text" class="dfinput"/></li>
-			<li><label>电子邮箱</label><input name="" type="text" class="dfinput"/></li>
+			<li><label>出生日期<b>*</b></label><input name="birthday" type="text" class="dfinput" onclick="WdatePicker()"/></li>
+			<li><label>身份证号码<b>*</b></label><input name="idNum" type="text" class="dfinput"/></li>
+			<li><label>个人电话</label><input name="phone" type="text" class="dfinput"/></li>
+			<li><label>电子邮箱</label><input name="email" type="text" class="dfinput"/></li>
 			<li><label>籍贯</label>
-			<textarea name="" cols="" rows="" class="textinputsmall"></textarea></li>
+			<textarea name="nativePlace" cols="" rows="" class="textinputsmall"></textarea></li>
 			<li><label>备注</label>
-			<textarea name="" cols="" rows="" class="textinput"></textarea></li>
-			<li><label>&nbsp;</label><input name="" type="button"
-				class="btn" value="确认保存" /></li>
+			<textarea name="mark" cols="" rows="" class="textinput"></textarea></li>
+			<li><label>&nbsp;</label><input name="" type="button"class="btn" value="确认保存" /></li>
+			</form>
 		</ul>
-
-
 	</div>
 </body>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.min.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.easyui.min.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/js/select-ui.min.js"></script>
 <script type="text/javascript"

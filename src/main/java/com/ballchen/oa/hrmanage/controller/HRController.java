@@ -1,5 +1,6 @@
 package com.ballchen.oa.hrmanage.controller;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,13 +11,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.ballchen.oa.base.consts.BaseConsts;
+import com.ballchen.oa.base.model.PageHelper;
+import com.ballchen.oa.base.service.IBaseService;
+import com.ballchen.oa.hrmanage.model.UserBasic;
 import com.ballchen.oa.hrmanage.service.IHrmanageService;
+import com.sun.xml.internal.xsom.impl.parser.BaseContentRef;
 
 @Controller
 @RequestMapping("/hrManage")
 public class HRController {
 	@Autowired
 	private IHrmanageService hrmanageService;
+	@Autowired
+	private IBaseService baseService;
 	
 	/**
 	 * 转向人资管理登录页面
@@ -74,11 +81,20 @@ public class HRController {
 	
 	/**
 	 * 转向基本信息页面
-	 * @return String
+	 * @param userBasic 用户基本信息
+	 * @param pageHelper 分页
+	 * @return ModelAndView 带参数视图
 	 */
 	@RequestMapping(value="/toBaseInfoPage",method={RequestMethod.GET})
-	public String toBaseInfoPage(){
-		return "/hrmanage/personnelInformation/personnelInfoManage/baseInfo";
+	public ModelAndView toBaseInfoPage(UserBasic userBasic,PageHelper pageHelper){
+		ModelAndView mv = new ModelAndView("/hrmanage/personnelInformation/personnelInfoManage/baseInfo");
+		List<UserBasic> userBasics = this.hrmanageService.getUserBasicByParam(userBasic, pageHelper);
+		long total = this.hrmanageService.getUsersTotal(userBasic, pageHelper);
+		pageHelper.setTotal(total);
+		mv.addObject("userBasics", userBasics);
+		mv.addObject("pageHelper",pageHelper);
+		mv.addObject("nations", BaseConsts.getAllNationData());
+		return mv;
 	}
 	
 	/**
@@ -90,6 +106,28 @@ public class HRController {
 		ModelAndView mv = new ModelAndView("/hrmanage/personnelInformation/personnelInfoManage/addAndEdit");
 		mv.addObject("nationJSONStr", BaseConsts.getAllNationData());
 		return mv;
+	}
+	
+	/**
+	 * 添加或修改用户基本信息
+	 * @param userBasic 用户基本信息
+	 * @return Map<String,Object>
+	 */
+	@RequestMapping(value="/amUserBasic",method={RequestMethod.POST})
+	@ResponseBody
+	public Map<String,Object> amUserBasic(UserBasic userBasic){
+		Map<String,Object> returnMap = null;
+		if(userBasic.getId() == null){//当id为空时，为添加
+			try {
+				hrmanageService.saveUserBasic(userBasic);
+				returnMap = baseService.getNoramlReturnJSONMap(true, "INSERTTRUE");
+			} catch (Exception e) {
+				returnMap = baseService.getNoramlReturnJSONMap(false, "INSERTFALSE");
+			}
+		}else{//当id不为空时，为修改
+			returnMap = baseService.getNoramlReturnJSONMap(true, "UPDATETRUE");
+		}
+		return returnMap;				
 	}
 	
 	
