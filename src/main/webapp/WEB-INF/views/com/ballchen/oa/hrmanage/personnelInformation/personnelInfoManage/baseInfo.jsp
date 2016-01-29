@@ -108,7 +108,5 @@
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript"
-	src="<%=request.getContextPath()%>/resources/laypage/laypage.js"></script>
-<script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/hrmanage/personnelInformation/personnelInfoManage/baseInfo.js"></script>
 </html>
