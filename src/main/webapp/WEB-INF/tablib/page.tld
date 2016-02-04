@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>Page TLD</short-name>
+  <tag>
+    <name>page</name>
+    <tag-class>com.ballchen.oa.base.jsptag.PageTag</tag-class>
+    <body-content>scriptless</body-content>
+	<attribute>
+      <name>page</name>
+      <required>true</required>
+      <type>java.lang.Integer</type>
+      <rtexprvalue>true</rtexprvalue>
+      <description>第几页</description>
+    </attribute>
+    <attribute>
+      <name>rows</name>
+      <required>true</required>
+      <type>java.lang.Integer</type>
+      <rtexprvalue>true</rtexprvalue>
+      <description>每页几条数据</description>
+    </attribute>
+    <attribute>
+      <name>total</name>
+      <required>true</required>
+      <type>java.lang.Long</type>
+      <rtexprvalue>true</rtexprvalue>
+      <description>总共有几条数据</description>
+    </attribute>
+    
+    <attribute>
+    	<name>sort</name>
+    	<required>false</required>
+    	<rtexprvalue>true</rtexprvalue>
+    	<description>排序字段名称</description>
+    </attribute>
+    <attribute>
+    	<name>order</name>
+    	<required>false</required>
+    	<rtexprvalue>true</rtexprvalue>
+    	<description>排序方式asc/desc</description>
+    </attribute>
+  </tag>
+</taglib>

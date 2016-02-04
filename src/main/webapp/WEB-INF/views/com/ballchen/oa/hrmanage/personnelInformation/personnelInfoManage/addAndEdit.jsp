@@ -23,6 +23,8 @@
 			<span>基本信息</span>
 		</div>
 		<form class="easyui-form"  method="post">
+			<input type="hidden" name="id"/>
+			<input type="hidden" name="addDate"/>
 		<ul class="forminfo">
 			<li><label>姓名<b>*</b></label><input name="userName" type="text"
 				class="dfinput" /><i>姓名不能超过30个字符</i></li>
@@ -56,7 +58,7 @@
 					</select>
 				</div></li>
 			<li><label>出生日期<b>*</b></label><input name="birthday" type="text" class="dfinput" onclick="WdatePicker()"/></li>
-			<li><label>身份证号码<b>*</b></label><input name="idNum" type="text" class="dfinput"/><i>身份证号码不能超过30个字符</i></li>
+			<li><label>身份证号码<b>*</b></label><input name="idNum" type="text" class="dfinput"/></li>
 			<li><label>个人电话</label><input name="phone" type="text" class="dfinput"/></li>
 			<li><label>电子邮箱</label><input name="email" type="text" class="dfinput"/><i>电子邮箱不能超过200个字符</i></li>
 			<li><label>籍贯</label>

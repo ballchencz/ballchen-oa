@@ -12347,3 +12347,542 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO][2016-02-03 16:51:16,182][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
 [INFO][2016-02-03 16:51:16,298][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
 [INFO][2016-02-03 16:51:16,489][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 2437 ms
+[INFO][2016-02-04 09:08:50,746][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2016-02-04 09:08:50,945][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Feb 04 09:08:50 CST 2016]; root of context hierarchy
+[INFO][2016-02-04 09:08:51,228][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/root-context.xml]
+[INFO][2016-02-04 09:08:51,496][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/data-source.xml]
+[INFO][2016-02-04 09:08:52,147][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/hibernate-config.xml]
+[INFO][2016-02-04 09:08:52,554][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dataSource.properties]
+[INFO][2016-02-04 09:08:52,581][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 09:08:53,166][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-02-04 09:08:53,665][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2016-02-04 09:08:53,781][org.hibernate.Version]HHH000412: Hibernate Core {4.3.6.Final}
+[INFO][2016-02-04 09:08:53,811][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-02-04 09:08:53,813][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-02-04 09:08:54,618][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO][2016-02-04 09:08:55,170][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-02-04 09:08:55,192][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-02-04 09:08:55,454][org.hibernate.validator.util.Version]Hibernate Validator 4.1.0.Final
+[INFO][2016-02-04 09:08:55,463][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[WARN][2016-02-04 09:08:55,716][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-02-04 09:08:56,290][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-02-04 09:08:56,290][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-02-04 09:08:56,294][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-02-04 09:08:56,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: oa.ballchen_t_user_basic
+[INFO][2016-02-04 09:08:56,351][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [political_status, native_place, id, user_name, birthday, phone, email, add_date, mark, user_sex, marital_status, id_num, nation]
+[INFO][2016-02-04 09:08:56,352][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-02-04 09:08:56,352][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-02-04 09:08:56,353][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-02-04 09:08:56,741][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-02-04 09:08:52",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1488395935, ConnectTime:"2016-02-04 09:08:54", UseCount:2, LastActiveTime:"2016-02-04 09:08:56"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-02-04 09:08:56,823][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 6072 ms
+[INFO][2016-02-04 09:08:56,892][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization started
+[INFO][2016-02-04 09:08:56,900][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 09:08:56 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 09:08:56,916][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/servlet-context.xml]
+[INFO][2016-02-04 09:08:57,346][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/controllers.xml]
+[INFO][2016-02-04 09:08:57,571][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 09:08:57,896][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/toHomePage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.base.controller.MainController.toHomePage(java.lang.String)
+[INFO][2016-02-04 09:08:57,898][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/getAjaxData],methods=[GET]}" onto public com.ballchen.oa.base.model.JavaBean com.ballchen.oa.base.controller.MainController.getAjaxData(com.ballchen.oa.base.model.JavaBean)
+[INFO][2016-02-04 09:08:57,907][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.login()
+[INFO][2016-02-04 09:08:57,908][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toLoginPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toLoginPage()
+[INFO][2016-02-04 09:08:57,908][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/amUserBasic],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.amUserBasic(com.ballchen.oa.hrmanage.model.UserBasic)
+[INFO][2016-02-04 09:08:57,909][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageLeft],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageLeftPage()
+[INFO][2016-02-04 09:08:57,909][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toBaseInfoPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(com.ballchen.oa.hrmanage.model.UserBasic,com.ballchen.oa.base.model.PageHelper)
+[INFO][2016-02-04 09:08:57,909][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toMainCenterPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toMainCenterPage(java.lang.String)
+[INFO][2016-02-04 09:08:57,909][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageMainPage()
+[INFO][2016-02-04 09:08:57,910][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toAddAndEditPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toAddAndEditPage()
+[INFO][2016-02-04 09:08:57,910][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageTop],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageTopPage()
+[INFO][2016-02-04 09:08:57,920][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/response-body]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callable()
+[INFO][2016-02-04 09:08:57,921][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/custom-timeout-handling]}" onto public org.springframework.web.context.request.async.WebAsyncTask<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithCustomTimeoutHandling()
+[INFO][2016-02-04 09:08:57,921][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/view]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithView(org.springframework.ui.Model)
+[INFO][2016-02-04 09:08:57,922][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/exception]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithException(boolean)
+[INFO][2016-02-04 09:08:57,931][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/timeout-value]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithTimeoutValue()
+[INFO][2016-02-04 09:08:57,932][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/response-body]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResult()
+[INFO][2016-02-04 09:08:57,932][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/exception]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithException()
+[INFO][2016-02-04 09:08:57,932][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/model-and-view]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.web.servlet.ModelAndView> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithView()
+[INFO][2016-02-04 09:08:57,946][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/date/{value}]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.date(java.util.Date)
+[INFO][2016-02-04 09:08:57,946][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/collection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.collection(java.util.Collection<java.lang.Integer>)
+[INFO][2016-02-04 09:08:57,947][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/bean]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.bean(com.ballchen.oa.mvc.convert.JavaBean)
+[INFO][2016-02-04 09:08:57,947][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/value]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.valueObject(com.ballchen.oa.mvc.convert.SocialSecurityNumber)
+[INFO][2016-02-04 09:08:57,947][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/custom]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.customConverter(java.lang.String)
+[INFO][2016-02-04 09:08:57,947][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/primitive]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.primitive(java.lang.Integer)
+[INFO][2016-02-04 09:08:57,948][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/formattedCollection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.formattedCollection(java.util.Collection<java.util.Date>)
+[INFO][2016-02-04 09:08:57,952][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/custom],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.custom(java.lang.String)
+[INFO][2016-02-04 09:08:57,953][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/customs],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.customs(java.lang.String)
+[INFO][2016-02-04 09:08:58,007][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[INFO][2016-02-04 09:08:58,970][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 09:08:56 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 09:08:59,134][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 09:08:56 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 09:08:59,349][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-02-04 09:08:59,534][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2016-02-04 09:08:59,765][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 2872 ms
+[WARN][2016-02-04 09:43:53,171][com.alibaba.druid.pool.DruidDataSource]get/close not same thread
+[ERROR][2016-02-04 09:43:53,173][com.alibaba.druid.pool.DruidDataSource]abandon connection, open stackTrace
+	at java.lang.Thread.getStackTrace(Thread.java:1589)
+	at com.alibaba.druid.pool.DruidDataSource.getConnectionDirect(DruidDataSource.java:970)
+	at com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(FilterChainImpl.java:4544)
+	at com.alibaba.druid.filter.stat.StatFilter.dataSource_getConnection(StatFilter.java:661)
+	at com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(FilterChainImpl.java:4540)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:894)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:886)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:96)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:450)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:450)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:427)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:276)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at com.ballchen.oa.hrmanage.service.impl.HrmanageServiceImpl$$EnhancerBySpringCGLIB$$3b92daf7.getUserBasicByParam(<generated>)
+	at com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(HRController.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:806)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:729)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:151)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.__invoke(StandardHostValve.java:171)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+[INFO][2016-02-04 10:54:44,336][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2016-02-04 10:54:44,665][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Feb 04 10:54:44 CST 2016]; root of context hierarchy
+[INFO][2016-02-04 10:54:44,957][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/root-context.xml]
+[INFO][2016-02-04 10:54:45,060][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/data-source.xml]
+[INFO][2016-02-04 10:54:45,444][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/hibernate-config.xml]
+[INFO][2016-02-04 10:54:45,886][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dataSource.properties]
+[INFO][2016-02-04 10:54:45,895][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 10:54:46,463][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-02-04 10:54:46,869][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2016-02-04 10:54:46,889][org.hibernate.Version]HHH000412: Hibernate Core {4.3.6.Final}
+[INFO][2016-02-04 10:54:46,895][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-02-04 10:54:46,898][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-02-04 10:54:47,827][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO][2016-02-04 10:54:48,350][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-02-04 10:54:48,370][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-02-04 10:54:48,692][org.hibernate.validator.util.Version]Hibernate Validator 4.1.0.Final
+[INFO][2016-02-04 10:54:48,711][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[WARN][2016-02-04 10:54:49,151][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-02-04 10:54:49,756][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-02-04 10:54:49,756][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-02-04 10:54:49,765][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-02-04 10:54:49,822][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: oa.ballchen_t_user_basic
+[INFO][2016-02-04 10:54:49,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [political_status, native_place, id, user_name, birthday, phone, email, add_date, mark, user_sex, marital_status, id_num, nation]
+[INFO][2016-02-04 10:54:49,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-02-04 10:54:49,823][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-02-04 10:54:49,824][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-02-04 10:54:50,258][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-02-04 10:54:46",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:2098938905, ConnectTime:"2016-02-04 10:54:47", UseCount:2, LastActiveTime:"2016-02-04 10:54:49"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-02-04 10:54:50,369][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 6032 ms
+[INFO][2016-02-04 10:54:50,468][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization started
+[INFO][2016-02-04 10:54:50,475][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 10:54:50 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 10:54:50,478][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/servlet-context.xml]
+[INFO][2016-02-04 10:54:50,922][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/controllers.xml]
+[INFO][2016-02-04 10:54:51,223][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 10:54:51,577][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/getAjaxData],methods=[GET]}" onto public com.ballchen.oa.base.model.JavaBean com.ballchen.oa.base.controller.MainController.getAjaxData(com.ballchen.oa.base.model.JavaBean)
+[INFO][2016-02-04 10:54:51,579][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/toHomePage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.base.controller.MainController.toHomePage(java.lang.String)
+[INFO][2016-02-04 10:54:51,591][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/amUserBasic],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.amUserBasic(com.ballchen.oa.hrmanage.model.UserBasic)
+[INFO][2016-02-04 10:54:51,592][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toLoginPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toLoginPage()
+[INFO][2016-02-04 10:54:51,593][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toBaseInfoPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(com.ballchen.oa.hrmanage.model.UserBasic,com.ballchen.oa.base.model.PageHelper)
+[INFO][2016-02-04 10:54:51,594][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toAddAndEditPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toAddAndEditPage()
+[INFO][2016-02-04 10:54:51,595][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.login()
+[INFO][2016-02-04 10:54:51,595][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageMainPage()
+[INFO][2016-02-04 10:54:51,595][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageLeft],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageLeftPage()
+[INFO][2016-02-04 10:54:51,596][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toMainCenterPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toMainCenterPage(java.lang.String)
+[INFO][2016-02-04 10:54:51,596][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageTop],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageTopPage()
+[INFO][2016-02-04 10:54:51,606][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/custom-timeout-handling]}" onto public org.springframework.web.context.request.async.WebAsyncTask<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithCustomTimeoutHandling()
+[INFO][2016-02-04 10:54:51,607][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/response-body]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callable()
+[INFO][2016-02-04 10:54:51,607][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/exception]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithException(boolean)
+[INFO][2016-02-04 10:54:51,608][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/view]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithView(org.springframework.ui.Model)
+[INFO][2016-02-04 10:54:51,615][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/response-body]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResult()
+[INFO][2016-02-04 10:54:51,616][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/timeout-value]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithTimeoutValue()
+[INFO][2016-02-04 10:54:51,616][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/exception]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithException()
+[INFO][2016-02-04 10:54:51,616][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/model-and-view]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.web.servlet.ModelAndView> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithView()
+[INFO][2016-02-04 10:54:51,629][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/date/{value}]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.date(java.util.Date)
+[INFO][2016-02-04 10:54:51,630][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/collection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.collection(java.util.Collection<java.lang.Integer>)
+[INFO][2016-02-04 10:54:51,630][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/bean]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.bean(com.ballchen.oa.mvc.convert.JavaBean)
+[INFO][2016-02-04 10:54:51,630][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/value]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.valueObject(com.ballchen.oa.mvc.convert.SocialSecurityNumber)
+[INFO][2016-02-04 10:54:51,630][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/custom]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.customConverter(java.lang.String)
+[INFO][2016-02-04 10:54:51,631][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/formattedCollection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.formattedCollection(java.util.Collection<java.util.Date>)
+[INFO][2016-02-04 10:54:51,631][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/primitive]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.primitive(java.lang.Integer)
+[INFO][2016-02-04 10:54:51,634][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/custom],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.custom(java.lang.String)
+[INFO][2016-02-04 10:54:51,635][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/customs],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.customs(java.lang.String)
+[INFO][2016-02-04 10:54:51,663][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[INFO][2016-02-04 10:54:52,728][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 10:54:50 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 10:54:52,893][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 10:54:50 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 10:54:53,104][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-02-04 10:54:53,211][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2016-02-04 10:54:53,378][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 2910 ms
+[INFO][2016-02-04 13:21:05,749][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2016-02-04 13:21:06,002][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Feb 04 13:21:06 CST 2016]; root of context hierarchy
+[INFO][2016-02-04 13:21:06,307][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/root-context.xml]
+[INFO][2016-02-04 13:21:06,461][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/data-source.xml]
+[INFO][2016-02-04 13:21:06,937][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/hibernate-config.xml]
+[INFO][2016-02-04 13:21:07,551][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dataSource.properties]
+[INFO][2016-02-04 13:21:07,567][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:21:08,189][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-02-04 13:21:08,549][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2016-02-04 13:21:08,562][org.hibernate.Version]HHH000412: Hibernate Core {4.3.6.Final}
+[INFO][2016-02-04 13:21:08,565][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-02-04 13:21:08,568][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-02-04 13:21:09,106][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO][2016-02-04 13:21:09,390][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-02-04 13:21:09,406][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-02-04 13:21:09,589][org.hibernate.validator.util.Version]Hibernate Validator 4.1.0.Final
+[INFO][2016-02-04 13:21:09,600][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[WARN][2016-02-04 13:21:09,794][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-02-04 13:21:10,173][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-02-04 13:21:10,173][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-02-04 13:21:10,177][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-02-04 13:21:10,207][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: oa.ballchen_t_user_basic
+[INFO][2016-02-04 13:21:10,207][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [political_status, native_place, id, user_name, birthday, phone, email, add_date, mark, user_sex, marital_status, id_num, nation]
+[INFO][2016-02-04 13:21:10,207][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-02-04 13:21:10,207][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-02-04 13:21:10,208][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-02-04 13:21:10,638][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-02-04 13:21:07",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:726904672, ConnectTime:"2016-02-04 13:21:09", UseCount:2, LastActiveTime:"2016-02-04 13:21:10"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-02-04 13:21:10,727][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4978 ms
+[INFO][2016-02-04 13:21:10,791][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization started
+[INFO][2016-02-04 13:21:10,798][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:21:10 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:21:10,800][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/servlet-context.xml]
+[INFO][2016-02-04 13:21:11,089][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/controllers.xml]
+[INFO][2016-02-04 13:21:11,323][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:21:11,731][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/toHomePage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.base.controller.MainController.toHomePage(java.lang.String)
+[INFO][2016-02-04 13:21:11,733][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/getAjaxData],methods=[GET]}" onto public com.ballchen.oa.base.model.JavaBean com.ballchen.oa.base.controller.MainController.getAjaxData(com.ballchen.oa.base.model.JavaBean)
+[INFO][2016-02-04 13:21:11,740][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.login()
+[INFO][2016-02-04 13:21:11,741][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toMainCenterPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toMainCenterPage(java.lang.String)
+[INFO][2016-02-04 13:21:11,741][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toBaseInfoPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(com.ballchen.oa.hrmanage.model.UserBasic,com.ballchen.oa.base.model.PageHelper)
+[INFO][2016-02-04 13:21:11,741][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageTop],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageTopPage()
+[INFO][2016-02-04 13:21:11,741][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageMainPage()
+[INFO][2016-02-04 13:21:11,742][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toAddAndEditPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toAddAndEditPage()
+[INFO][2016-02-04 13:21:11,742][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageLeft],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageLeftPage()
+[INFO][2016-02-04 13:21:11,742][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/amUserBasic],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.amUserBasic(com.ballchen.oa.hrmanage.model.UserBasic)
+[INFO][2016-02-04 13:21:11,743][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toLoginPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toLoginPage()
+[INFO][2016-02-04 13:21:11,749][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/response-body]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callable()
+[INFO][2016-02-04 13:21:11,749][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/view]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithView(org.springframework.ui.Model)
+[INFO][2016-02-04 13:21:11,750][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/exception]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithException(boolean)
+[INFO][2016-02-04 13:21:11,750][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/custom-timeout-handling]}" onto public org.springframework.web.context.request.async.WebAsyncTask<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithCustomTimeoutHandling()
+[INFO][2016-02-04 13:21:11,757][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/response-body]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResult()
+[INFO][2016-02-04 13:21:11,757][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/exception]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithException()
+[INFO][2016-02-04 13:21:11,758][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/model-and-view]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.web.servlet.ModelAndView> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithView()
+[INFO][2016-02-04 13:21:11,758][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/timeout-value]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithTimeoutValue()
+[INFO][2016-02-04 13:21:11,770][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/date/{value}]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.date(java.util.Date)
+[INFO][2016-02-04 13:21:11,770][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/bean]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.bean(com.ballchen.oa.mvc.convert.JavaBean)
+[INFO][2016-02-04 13:21:11,770][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/collection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.collection(java.util.Collection<java.lang.Integer>)
+[INFO][2016-02-04 13:21:11,771][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/formattedCollection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.formattedCollection(java.util.Collection<java.util.Date>)
+[INFO][2016-02-04 13:21:11,771][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/primitive]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.primitive(java.lang.Integer)
+[INFO][2016-02-04 13:21:11,771][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/value]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.valueObject(com.ballchen.oa.mvc.convert.SocialSecurityNumber)
+[INFO][2016-02-04 13:21:11,771][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/custom]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.customConverter(java.lang.String)
+[INFO][2016-02-04 13:21:11,775][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/customs],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.customs(java.lang.String)
+[INFO][2016-02-04 13:21:11,775][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/custom],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.custom(java.lang.String)
+[INFO][2016-02-04 13:21:11,808][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[INFO][2016-02-04 13:21:12,439][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:21:10 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:21:12,597][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:21:10 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:21:12,736][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-02-04 13:21:12,811][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2016-02-04 13:21:12,956][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 2165 ms
+[INFO][2016-02-04 13:26:32,838][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2016-02-04 13:26:33,025][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Feb 04 13:26:33 CST 2016]; root of context hierarchy
+[INFO][2016-02-04 13:26:33,256][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/root-context.xml]
+[INFO][2016-02-04 13:26:33,356][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/data-source.xml]
+[INFO][2016-02-04 13:26:33,748][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/hibernate-config.xml]
+[INFO][2016-02-04 13:26:34,214][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dataSource.properties]
+[INFO][2016-02-04 13:26:34,230][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:26:34,863][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-02-04 13:26:35,250][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2016-02-04 13:26:35,264][org.hibernate.Version]HHH000412: Hibernate Core {4.3.6.Final}
+[INFO][2016-02-04 13:26:35,268][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-02-04 13:26:35,271][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-02-04 13:26:35,854][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO][2016-02-04 13:26:36,132][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-02-04 13:26:36,141][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-02-04 13:26:36,316][org.hibernate.validator.util.Version]Hibernate Validator 4.1.0.Final
+[INFO][2016-02-04 13:26:36,325][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[WARN][2016-02-04 13:26:36,540][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-02-04 13:26:36,955][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-02-04 13:26:36,955][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-02-04 13:26:36,960][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-02-04 13:26:36,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: oa.ballchen_t_user_basic
+[INFO][2016-02-04 13:26:36,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [political_status, native_place, id, user_name, birthday, phone, email, add_date, mark, user_sex, marital_status, id_num, nation]
+[INFO][2016-02-04 13:26:36,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-02-04 13:26:36,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-02-04 13:26:36,989][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-02-04 13:26:37,448][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-02-04 13:26:34",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1227510651, ConnectTime:"2016-02-04 13:26:35", UseCount:2, LastActiveTime:"2016-02-04 13:26:36"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-02-04 13:26:37,548][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4709 ms
+[INFO][2016-02-04 13:26:37,625][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization started
+[INFO][2016-02-04 13:26:37,633][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:26:37 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:26:37,635][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/servlet-context.xml]
+[INFO][2016-02-04 13:26:37,997][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/controllers.xml]
+[INFO][2016-02-04 13:26:38,226][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:26:38,576][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/toHomePage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.base.controller.MainController.toHomePage(java.lang.String)
+[INFO][2016-02-04 13:26:38,577][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/getAjaxData],methods=[GET]}" onto public com.ballchen.oa.base.model.JavaBean com.ballchen.oa.base.controller.MainController.getAjaxData(com.ballchen.oa.base.model.JavaBean)
+[INFO][2016-02-04 13:26:38,585][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.login()
+[INFO][2016-02-04 13:26:38,585][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toLoginPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toLoginPage()
+[INFO][2016-02-04 13:26:38,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/amUserBasic],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.amUserBasic(com.ballchen.oa.hrmanage.model.UserBasic)
+[INFO][2016-02-04 13:26:38,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageMainPage()
+[INFO][2016-02-04 13:26:38,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageLeft],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageLeftPage()
+[INFO][2016-02-04 13:26:38,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toMainCenterPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toMainCenterPage(java.lang.String)
+[INFO][2016-02-04 13:26:38,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageTop],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageTopPage()
+[INFO][2016-02-04 13:26:38,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toBaseInfoPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(com.ballchen.oa.hrmanage.model.UserBasic,com.ballchen.oa.base.model.PageHelper)
+[INFO][2016-02-04 13:26:38,587][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toAddAndEditPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toAddAndEditPage()
+[INFO][2016-02-04 13:26:38,595][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/response-body]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callable()
+[INFO][2016-02-04 13:26:38,596][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/view]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithView(org.springframework.ui.Model)
+[INFO][2016-02-04 13:26:38,596][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/exception]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithException(boolean)
+[INFO][2016-02-04 13:26:38,596][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/custom-timeout-handling]}" onto public org.springframework.web.context.request.async.WebAsyncTask<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithCustomTimeoutHandling()
+[INFO][2016-02-04 13:26:38,603][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/response-body]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResult()
+[INFO][2016-02-04 13:26:38,603][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/model-and-view]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.web.servlet.ModelAndView> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithView()
+[INFO][2016-02-04 13:26:38,603][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/exception]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithException()
+[INFO][2016-02-04 13:26:38,603][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/timeout-value]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithTimeoutValue()
+[INFO][2016-02-04 13:26:38,614][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/date/{value}]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.date(java.util.Date)
+[INFO][2016-02-04 13:26:38,615][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/value]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.valueObject(com.ballchen.oa.mvc.convert.SocialSecurityNumber)
+[INFO][2016-02-04 13:26:38,615][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/collection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.collection(java.util.Collection<java.lang.Integer>)
+[INFO][2016-02-04 13:26:38,615][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/bean]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.bean(com.ballchen.oa.mvc.convert.JavaBean)
+[INFO][2016-02-04 13:26:38,615][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/formattedCollection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.formattedCollection(java.util.Collection<java.util.Date>)
+[INFO][2016-02-04 13:26:38,616][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/primitive]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.primitive(java.lang.Integer)
+[INFO][2016-02-04 13:26:38,616][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/custom]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.customConverter(java.lang.String)
+[INFO][2016-02-04 13:26:38,620][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/customs],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.customs(java.lang.String)
+[INFO][2016-02-04 13:26:38,621][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/custom],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.custom(java.lang.String)
+[INFO][2016-02-04 13:26:38,657][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[INFO][2016-02-04 13:26:39,287][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:26:37 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:26:39,431][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:26:37 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:26:39,651][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-02-04 13:26:39,747][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2016-02-04 13:26:39,907][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 2282 ms
+[INFO][2016-02-04 13:28:03,282][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2016-02-04 13:28:03,516][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Feb 04 13:28:03 CST 2016]; root of context hierarchy
+[INFO][2016-02-04 13:28:03,799][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/root-context.xml]
+[INFO][2016-02-04 13:28:03,899][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/data-source.xml]
+[INFO][2016-02-04 13:28:04,364][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/hibernate-config.xml]
+[INFO][2016-02-04 13:28:04,765][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dataSource.properties]
+[INFO][2016-02-04 13:28:04,778][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:28:05,348][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-02-04 13:28:05,703][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2016-02-04 13:28:05,725][org.hibernate.Version]HHH000412: Hibernate Core {4.3.6.Final}
+[INFO][2016-02-04 13:28:05,730][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-02-04 13:28:05,733][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-02-04 13:28:06,280][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO][2016-02-04 13:28:06,610][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-02-04 13:28:06,620][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-02-04 13:28:06,784][org.hibernate.validator.util.Version]Hibernate Validator 4.1.0.Final
+[INFO][2016-02-04 13:28:06,794][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[WARN][2016-02-04 13:28:06,997][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-02-04 13:28:07,414][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-02-04 13:28:07,414][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-02-04 13:28:07,418][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-02-04 13:28:07,446][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: oa.ballchen_t_user_basic
+[INFO][2016-02-04 13:28:07,446][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [political_status, native_place, id, user_name, birthday, phone, email, add_date, mark, user_sex, marital_status, id_num, nation]
+[INFO][2016-02-04 13:28:07,446][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-02-04 13:28:07,446][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-02-04 13:28:07,447][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-02-04 13:28:07,788][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-02-04 13:28:05",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:253817426, ConnectTime:"2016-02-04 13:28:06", UseCount:2, LastActiveTime:"2016-02-04 13:28:07"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-02-04 13:28:07,882][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4599 ms
+[INFO][2016-02-04 13:28:07,938][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization started
+[INFO][2016-02-04 13:28:07,943][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:28:07 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:28:07,945][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/servlet-context.xml]
+[INFO][2016-02-04 13:28:08,234][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/controllers.xml]
+[INFO][2016-02-04 13:28:08,603][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:28:09,073][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/toHomePage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.base.controller.MainController.toHomePage(java.lang.String)
+[INFO][2016-02-04 13:28:09,075][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/getAjaxData],methods=[GET]}" onto public com.ballchen.oa.base.model.JavaBean com.ballchen.oa.base.controller.MainController.getAjaxData(com.ballchen.oa.base.model.JavaBean)
+[INFO][2016-02-04 13:28:09,086][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toMainCenterPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toMainCenterPage(java.lang.String)
+[INFO][2016-02-04 13:28:09,086][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toBaseInfoPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(com.ballchen.oa.hrmanage.model.UserBasic,com.ballchen.oa.base.model.PageHelper)
+[INFO][2016-02-04 13:28:09,087][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toAddAndEditPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toAddAndEditPage()
+[INFO][2016-02-04 13:28:09,087][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageLeft],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageLeftPage()
+[INFO][2016-02-04 13:28:09,088][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageTop],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageTopPage()
+[INFO][2016-02-04 13:28:09,088][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageMainPage()
+[INFO][2016-02-04 13:28:09,089][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toLoginPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toLoginPage()
+[INFO][2016-02-04 13:28:09,089][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/amUserBasic],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.amUserBasic(com.ballchen.oa.hrmanage.model.UserBasic)
+[INFO][2016-02-04 13:28:09,101][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.login()
+[INFO][2016-02-04 13:28:09,111][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/response-body]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callable()
+[INFO][2016-02-04 13:28:09,111][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/custom-timeout-handling]}" onto public org.springframework.web.context.request.async.WebAsyncTask<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithCustomTimeoutHandling()
+[INFO][2016-02-04 13:28:09,112][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/view]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithView(org.springframework.ui.Model)
+[INFO][2016-02-04 13:28:09,112][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/exception]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithException(boolean)
+[INFO][2016-02-04 13:28:09,121][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/response-body]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResult()
+[INFO][2016-02-04 13:28:09,121][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/timeout-value]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithTimeoutValue()
+[INFO][2016-02-04 13:28:09,121][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/exception]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithException()
+[INFO][2016-02-04 13:28:09,122][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/model-and-view]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.web.servlet.ModelAndView> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithView()
+[INFO][2016-02-04 13:28:09,180][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/date/{value}]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.date(java.util.Date)
+[INFO][2016-02-04 13:28:09,181][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/collection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.collection(java.util.Collection<java.lang.Integer>)
+[INFO][2016-02-04 13:28:09,181][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/value]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.valueObject(com.ballchen.oa.mvc.convert.SocialSecurityNumber)
+[INFO][2016-02-04 13:28:09,182][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/bean]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.bean(com.ballchen.oa.mvc.convert.JavaBean)
+[INFO][2016-02-04 13:28:09,182][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/custom]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.customConverter(java.lang.String)
+[INFO][2016-02-04 13:28:09,182][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/primitive]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.primitive(java.lang.Integer)
+[INFO][2016-02-04 13:28:09,183][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/formattedCollection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.formattedCollection(java.util.Collection<java.util.Date>)
+[INFO][2016-02-04 13:28:09,189][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/custom],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.custom(java.lang.String)
+[INFO][2016-02-04 13:28:09,189][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/customs],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.customs(java.lang.String)
+[INFO][2016-02-04 13:28:09,262][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[INFO][2016-02-04 13:28:10,472][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:28:07 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:28:10,772][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:28:07 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:28:11,007][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-02-04 13:28:11,133][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2016-02-04 13:28:11,324][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 3386 ms
+[INFO][2016-02-04 13:45:08,753][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2016-02-04 13:45:09,022][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Feb 04 13:45:09 CST 2016]; root of context hierarchy
+[INFO][2016-02-04 13:45:09,327][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/root-context.xml]
+[INFO][2016-02-04 13:45:09,435][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/data-source.xml]
+[INFO][2016-02-04 13:45:09,837][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/data-source/hibernate-config.xml]
+[INFO][2016-02-04 13:45:10,269][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [dataSource.properties]
+[INFO][2016-02-04 13:45:10,280][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:45:10,757][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-02-04 13:45:11,217][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2016-02-04 13:45:11,230][org.hibernate.Version]HHH000412: Hibernate Core {4.3.6.Final}
+[INFO][2016-02-04 13:45:11,234][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-02-04 13:45:11,237][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-02-04 13:45:11,773][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO][2016-02-04 13:45:12,163][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-02-04 13:45:12,175][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2016-02-04 13:45:12,414][org.hibernate.validator.util.Version]Hibernate Validator 4.1.0.Final
+[INFO][2016-02-04 13:45:12,422][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[WARN][2016-02-04 13:45:12,645][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-02-04 13:45:13,051][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-02-04 13:45:13,051][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-02-04 13:45:13,061][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-02-04 13:45:13,096][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: oa.ballchen_t_user_basic
+[INFO][2016-02-04 13:45:13,096][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [political_status, native_place, id, user_name, birthday, phone, email, add_date, mark, user_sex, marital_status, id_num, nation]
+[INFO][2016-02-04 13:45:13,096][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-02-04 13:45:13,096][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-02-04 13:45:13,097][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-02-04 13:45:13,464][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2016-02-04 13:45:10",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:736233410, ConnectTime:"2016-02-04 13:45:11", UseCount:2, LastActiveTime:"2016-02-04 13:45:13"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2016-02-04 13:45:13,542][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4788 ms
+[INFO][2016-02-04 13:45:13,634][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization started
+[INFO][2016-02-04 13:45:13,640][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:45:13 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:45:13,642][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/servlet-context.xml]
+[INFO][2016-02-04 13:45:13,957][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-config/servlet/controllers.xml]
+[INFO][2016-02-04 13:45:14,141][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2016-02-04 13:45:14,539][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/getAjaxData],methods=[GET]}" onto public com.ballchen.oa.base.model.JavaBean com.ballchen.oa.base.controller.MainController.getAjaxData(com.ballchen.oa.base.model.JavaBean)
+[INFO][2016-02-04 13:45:14,541][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/main/toHomePage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.base.controller.MainController.toHomePage(java.lang.String)
+[INFO][2016-02-04 13:45:14,556][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageMainPage()
+[INFO][2016-02-04 13:45:14,556][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageTop],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageTopPage()
+[INFO][2016-02-04 13:45:14,557][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toHrmanageMainPageLeft],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toHrmanageLeftPage()
+[INFO][2016-02-04 13:45:14,557][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toMainCenterPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toMainCenterPage(java.lang.String)
+[INFO][2016-02-04 13:45:14,558][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toAddAndEditPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toAddAndEditPage()
+[INFO][2016-02-04 13:45:14,558][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toBaseInfoPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ballchen.oa.hrmanage.controller.HRController.toBaseInfoPage(com.ballchen.oa.hrmanage.model.UserBasic,com.ballchen.oa.base.model.PageHelper)
+[INFO][2016-02-04 13:45:14,559][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.login()
+[INFO][2016-02-04 13:45:14,559][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/toLoginPage],methods=[GET]}" onto public java.lang.String com.ballchen.oa.hrmanage.controller.HRController.toLoginPage()
+[INFO][2016-02-04 13:45:14,560][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hrManage/amUserBasic],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.ballchen.oa.hrmanage.controller.HRController.amUserBasic(com.ballchen.oa.hrmanage.model.UserBasic)
+[INFO][2016-02-04 13:45:14,570][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/custom-timeout-handling]}" onto public org.springframework.web.context.request.async.WebAsyncTask<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithCustomTimeoutHandling()
+[INFO][2016-02-04 13:45:14,571][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/exception]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithException(boolean)
+[INFO][2016-02-04 13:45:14,572][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/view]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callableWithView(org.springframework.ui.Model)
+[INFO][2016-02-04 13:45:14,572][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/callable/response-body]}" onto public java.util.concurrent.Callable<java.lang.String> com.ballchen.oa.mvc.async.controller.CallableController.callable()
+[INFO][2016-02-04 13:45:14,583][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/timeout-value]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithTimeoutValue()
+[INFO][2016-02-04 13:45:14,584][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/exception]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithException()
+[INFO][2016-02-04 13:45:14,585][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/model-and-view]}" onto public org.springframework.web.context.request.async.DeferredResult<org.springframework.web.servlet.ModelAndView> com.ballchen.oa.mvc.async.DeferredResultController.deferredResultWithView()
+[INFO][2016-02-04 13:45:14,585][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/async/deferred-result/response-body]}" onto public org.springframework.web.context.request.async.DeferredResult<java.lang.String> com.ballchen.oa.mvc.async.DeferredResultController.deferredResult()
+[INFO][2016-02-04 13:45:14,598][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/date/{value}]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.date(java.util.Date)
+[INFO][2016-02-04 13:45:14,600][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/formattedCollection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.formattedCollection(java.util.Collection<java.util.Date>)
+[INFO][2016-02-04 13:45:14,600][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/collection]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.collection(java.util.Collection<java.lang.Integer>)
+[INFO][2016-02-04 13:45:14,601][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/bean]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.bean(com.ballchen.oa.mvc.convert.JavaBean)
+[INFO][2016-02-04 13:45:14,602][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/custom]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.customConverter(java.lang.String)
+[INFO][2016-02-04 13:45:14,602][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/primitive]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.primitive(java.lang.Integer)
+[INFO][2016-02-04 13:45:14,603][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/convert/value]}" onto public java.lang.String com.ballchen.oa.mvc.convert.controller.ConvertController.valueObject(com.ballchen.oa.mvc.convert.SocialSecurityNumber)
+[INFO][2016-02-04 13:45:14,608][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/custom],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.custom(java.lang.String)
+[INFO][2016-02-04 13:45:14,609][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/customArgument/data/customs],methods=[GET]}" onto public java.lang.String com.ballchen.oa.mvc.data.custom.controller.CustomArgumentController.customs(java.lang.String)
+[INFO][2016-02-04 13:45:14,644][org.hibernate.validator.engine.resolver.DefaultTraversableResolver]Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+[INFO][2016-02-04 13:45:15,589][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:45:13 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:45:15,757][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Thu Feb 04 13:45:13 CST 2016]; parent: Root WebApplicationContext
+[INFO][2016-02-04 13:45:15,907][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2016-02-04 13:45:16,011][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2016-02-04 13:45:16,168][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'appServlet': initialization completed in 2534 ms

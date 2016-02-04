@@ -1,4 +1,5 @@
 package com.ballchen.oa.hrmanage.controller;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -119,6 +120,7 @@ public class HRController {
 		Map<String,Object> returnMap = null;
 		if(userBasic.getId() == null){//当id为空时，为添加
 			try {
+				userBasic.setAddDate(new Date());
 				hrmanageService.saveUserBasic(userBasic);
 				returnMap = baseService.getNoramlReturnJSONMap(true, "INSERTTRUE");
 			} catch (Exception e) {

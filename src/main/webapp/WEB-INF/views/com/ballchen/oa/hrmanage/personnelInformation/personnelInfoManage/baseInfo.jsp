@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="/WEB-INF/tablib/page.tld" prefix="page"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -82,24 +83,8 @@
 				</c:forEach>
 			</tbody>
 		</table>
-		<div class="pagin">
-			<div class="message">
-				共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页
-			</div>
-			<ul class="paginList">
-				<li class="paginItem"><a href="javascript:;"><span
-						class="pagepre"></span></a></li>
-				<li class="paginItem"><a href="javascript:;">1</a></li>
-				<li class="paginItem current"><a href="javascript:;">2</a></li>
-				<li class="paginItem"><a href="javascript:;">3</a></li>
-				<li class="paginItem"><a href="javascript:;">4</a></li>
-				<li class="paginItem"><a href="javascript:;">5</a></li>
-				<li class="paginItem more"><a href="javascript:;">...</a></li>
-				<li class="paginItem"><a href="javascript:;">10</a></li>
-				<li class="paginItem"><a href="javascript:;"><span
-						class="pagenxt"></span></a></li>
-			</ul>
-		</div>
+		<page:page page="${pageHelper.page}" rows="${pageHelper.rows}" total="${pageHelper.total}"/>
+	</div>
 </body>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.min.js"></script>
@@ -107,6 +92,8 @@
 	src="<%=request.getContextPath()%>/resources/js/select-ui.min.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/base/base.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/hrmanage/personnelInformation/personnelInfoManage/baseInfo.js"></script>
 </html>
