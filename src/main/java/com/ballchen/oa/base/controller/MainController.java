@@ -18,7 +18,7 @@ public class MainController {
 	 */
 	@RequestMapping(value="/toHomePage",method={RequestMethod.GET})
 	public String toHomePage(String name){
-		return "/main/main";
+		return "/main/basic";
 	}
 	
 	@RequestMapping(value="/getAjaxData",method={RequestMethod.GET})

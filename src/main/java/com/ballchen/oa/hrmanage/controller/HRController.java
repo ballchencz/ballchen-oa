@@ -16,7 +16,6 @@ import com.ballchen.oa.base.model.PageHelper;
 import com.ballchen.oa.base.service.IBaseService;
 import com.ballchen.oa.hrmanage.model.UserBasic;
 import com.ballchen.oa.hrmanage.service.IHrmanageService;
-import com.sun.xml.internal.xsom.impl.parser.BaseContentRef;
 
 @Controller
 @RequestMapping("/hrManage")
