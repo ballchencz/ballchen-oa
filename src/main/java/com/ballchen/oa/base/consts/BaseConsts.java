@@ -42,6 +42,16 @@ public class BaseConsts {
 	public static final String SIMPLEDATEFORMAT_FORMAT_STRING_TWO = "EEE MMM dd HH:mm:ss zzz yyyy";
 	
 	/**
+	 * 数据库表基本名称
+	 */
+	public static final String BASE_TABLE_NAME = "BALLCHEN_T_";
+	
+	/**
+	 * 加密算法
+	 */
+	public static final String ENCRYPTION = "MD5";
+	
+	/**
 	 * 获得民族Map集合
 	 * @return Map<Integer,String>
 	 */
@@ -52,4 +62,6 @@ public class BaseConsts {
 		}
 		return nations;
 	}
+	
+	
 }

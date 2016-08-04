@@ -17,6 +17,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 @MappedSuperclass
 public class BaseModel implements Serializable {
+
 	/**
 	 * 主键ID
 	 */
@@ -34,6 +35,12 @@ public class BaseModel implements Serializable {
 	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date addDate;
+	
+	/**
+	 * 删除状态（0.未删除；1.已删除）
+	 */
+	@Column(name="DELETE_STATUS",columnDefinition="INT default 0")
+	private Integer deleteStatus;
 
 	/*-----------------------setter/getter------------------------*/
 	public String getId() {
@@ -50,6 +57,14 @@ public class BaseModel implements Serializable {
 
 	public void setAddDate(Date addDate) {
 		this.addDate = addDate;
+	}
+
+	public Integer getDeleteStatus() {
+		return deleteStatus;
+	}
+
+	public void setDeleteStatus(Integer deleteStatus) {
+		this.deleteStatus = deleteStatus;
 	}
 	
 	

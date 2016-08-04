@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/WEB-INF/basicPageTag.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -67,6 +65,7 @@
 			<textarea name="mark" cols="" rows="" class="textinput"></textarea><i>备注不能超过500个字符</i></li>
 			<li><label>&nbsp;</label><input name="" type="button"class="btn" value="确认保存" /></li>
 		</ul>
+		<security:csrfInput/>
 		</form>
 	</div>
 </body>

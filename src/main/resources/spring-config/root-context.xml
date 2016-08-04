@@ -10,7 +10,7 @@
 		See http://docs.spring.io/spring-security/site/docs/3.2.x/reference/htmlsingle/#csrf for more information on
 		Spring Security's CSRF protection
 	-->
-<!-- 	<bean id="csrfFilter" class="org.springframework.security.web.csrf.CsrfFilter">
+<!--  	<bean id="csrfFilter" class="org.springframework.security.web.csrf.CsrfFilter">
 		<constructor-arg>
 			<bean class="org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository"/>
 		</constructor-arg>
@@ -21,5 +21,6 @@
 	-->
 	<!-- <bean id="requestDataValueProcessor" class="org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor"/> -->
 	<import resource="data-source/data-source.xml"/>
+	<import resource="security/spring-security.xml"/>
 	
 </beans>

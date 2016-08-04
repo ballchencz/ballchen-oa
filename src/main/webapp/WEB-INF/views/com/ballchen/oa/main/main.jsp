@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@taglib prefix='security' uri="http://www.springframework.org/security/tags" %> 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,7 +7,6 @@
 <title>人力资源管理</title>
 <link href="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/themes/default/easyui.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/themes/icon.css" rel="stylesheet" type="text/css" />
-<%-- <security:csrfMetaTags/> --%>
 </head>
 <body class="easyui-layout" id="mainBody">
 	<div data-options="region:'north',border:false" style="height:88px;">
@@ -34,6 +33,4 @@
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/jquery-easyui-1.4.4/locale/easyui-lang-zh_CN.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/layer/layer.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/main/basic.js"></script>
-
 </html>

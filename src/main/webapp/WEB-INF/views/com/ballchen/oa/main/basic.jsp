@@ -21,28 +21,28 @@
 		<span class="systemlogo"></span>
 			<ul class="contentUl">
 				<li>
-					<a href="<%=request.getContextPath()%>/hrManage/toLoginPage">
+					<a href="javascript:void(0)" data-options="{'id':'0'}">
 						<img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/main/images/hr_manage.png" alt="人力资源管理系统" />
 						<br/><br/>
 						人力资源管理系统
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="javascript:void(0)" data-options="{'id':'1'}">
 						<img src="<%=request.getContextPath()%>/resources/css/com/ballchen/oa/main/images/personal_office.png" alt="个人办公系统" />
 						<br/><br/>
 						个人办公系统
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="javascript:void(0)" data-options="{'id':'2'}">
 						<img src="<%=request.getContextPath() %>/resources/css/com/ballchen/oa/main/images/project_manage.png" alt="项目管理系统" />
 						<br/><br/>
 						项目管理系统
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="javascript:void(0)" data-options="{'id':'3'}">
 						<img src="<%=request.getContextPath() %>/resources/css/com/ballchen/oa/main/images/system_setting.png" alt="系统管理" />
 						<br/><br/>
 						系统管理
@@ -54,5 +54,9 @@
 		版权所有2015，仅供学习交流，请勿用于任何商业用途
 	</div>
 </body>
+<script type="text/javascript">
+	var contextPath = "<%=request.getContextPath()%>";
+</script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/com/ballchen/oa/main/basic.js"></script>
 </html>
